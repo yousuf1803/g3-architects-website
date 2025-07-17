@@ -7,3 +7,81 @@
   font: weight 400;
   font-style: normal;
 }
+header{
+    background-color:rgba(255, 144, 14, 0.1) ;
+    height:1322px ;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width:1440px ;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 63px;
+}
+.brand{
+    width: 302px;
+    height: 53px;
+    font-weight: bold;
+    font-size:2.8rem;
+    color:rgba(19, 19, 19, 1) ;
+}
+.nav-links{
+    display: flex;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    margin-right: 30px;
+    color:rgba(66, 66, 66, 1) ;
+    font-weight: medium;
+    font-size: 18px;
+}
+.banner{
+    max-width:1440px ;
+    margin: 0 auto;
+}
+.banner-content{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 862px;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.banner-tittle{
+   font-weight:bold;
+   font-size:3.8rem;
+   color:rgba(19, 19, 19, 1) ;
+   margin: 0 auto;
+}
+.banner-description{
+   
+    font-size:1rem;
+    color:rgba(114, 114, 114, 1) ;
+}
+.banner-button{
+    font-size:600px;
+    font-size: 1.25rem;
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    color:rgba(255, 255, 255, 1) ;
+    background-color:rgba(255, 144, 14, 1);
+    margin-top: 20px;
+     
+}
+.banner-image{
+    width:100%;
+    height: 700px;
+    border-radius: 8px;
+}
+@media  screen and (max-width:576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    
+}
