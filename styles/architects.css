@@ -3,9 +3,11 @@
 
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font: weight 400;
-  font-style: normal;
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 header{
     background-color:rgba(255, 144, 14, 0.1) ;
@@ -21,7 +23,7 @@ header{
     margin-top: 63px;
 }
 .brand{
-    width: 302px;
+    max-width: 302px;
     height: 53px;
     font-weight: bold;
     font-size:2.8rem;
@@ -125,15 +127,125 @@ font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
 }
+.section-2{
+    max-width: 1440px;
+    margin:auto;
+}
+.features-2{
+    display: flex;
+    gap:146px;
+
+}
+.features-2-items-title{
+    max-width: 464px;
+    font-weight: bold;
+    font-size: 2.8rem;
+    color:rgba(19, 19, 19, 1);
+    border-left:5px solid rgba(255, 144, 14, 1) ;
+    padding-left:21px;
+
+}
+.features-2-items p{
+    max-width: 586px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+  color: rgba(114, 114, 114, 1);
+}
+.features-2-card{
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding:30px 42px 30px 30px;
+    margin-bottom: 20px;
+
+}
+.features-2-card h3{
+    max-width:253px;
+    max-height: 23px;
+    font-weight:600px;
+    font-size:1.25rem;
+    color:rgba(19, 19, 19, 1);
+}
+.features-2-card p{
+    max-width: 514px;
+    color: rgba(114, 114, 114, 1);
+}
+.features-2-img img{
+    display: block;
+}
+.img-bottom{
+    background-color:rgba(255, 144, 14, 1) ;
+    max-width: 342px;
+    text-align: center;
+    border-radius: 8px;
+    padding:46px 42Px;
+    position: relative;
+    top:-123px;
+    left:-92px;
+}
+.year{
+    font-weight: bold;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 1);
+}
+.ex{
+    font-weight: medium;
+    font-size: 1.56rem;
+    color: rgba(255, 255, 255, 1);
+}
 
 
-
+@media  screen and (min-width:576px) and (max-width:992px){
+    
+    .teams{
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .navbar{
+        margin-top: 0;
+    }
+    .features{
+margin:50px auto;
+}
+.features-2{
+    flex-direction: column;
+    gap:20px;
+}
+.features-2-img img{
+    width: 100%;
+}
+.img-bottom{
+    top:0;
+    left:0;
+}
+}
 
 
 
 @media  screen and (max-width:576px) {
-    .navbar, .nav-links{
+    .navbar{
+        margin-top:0px ;
+    }
+    .navbar,
+    .nav-links, 
+    .teams{
         flex-direction: column;
     }
-    
+    .team-image-container{
+grid-template-columns: repeat(1,1fr);
+margin-top:130px;
+}
+.features{
+margin:20px auto;
+}
+.features-2{
+    flex-direction: column;
+    gap:20px;
+}
+.features-2-img img{
+    width: 100%;
+}
+.img-bottom{
+    top:0;
+    left:0;
+}
 }
