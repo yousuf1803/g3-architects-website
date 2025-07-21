@@ -20,7 +20,8 @@ header{
     max-width:1440px ;
     margin: 0 auto;
     align-items: center;
-    margin-top: 63px;
+    padding-top: 63px;
+
 }
 .brand{
     max-width: 302px;
